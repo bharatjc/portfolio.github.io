@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+            rgba(3, 3, 25, 0.8),
+            rgba(3, 3, 25, 0.8)
+          ),
+          url("./images/skill.jpg");
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "popins", sans-serif;
+      }
+      body h1 {
+        font-size: 60px;
+        text-align: center;
+      }
+      .container {
+         display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 1500px;
+        margin-top: 150px;
+        margin-left: 20px;
+      }
+
+      .component {
+        width: 20%;
+        transition: width 0.5s;
+      }
+
+      .component:hover {
+        width: 20%;
+        font-size: 1.5rem;
+      }
+
+      .component img {
+        width: 100px;
+        height: auto;
+        transition: transform 0.5s;
+      }
+
+      .component:hover img {
+        transform: scale(1.2);
+      }
+
+      h2 {
+        font-size: 30px;
+        color: cadetblue;
+      }
+      p {
+        color: dimgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Skills</h1>
+    <div class="container">
+      <div class="component">
+        <img src="./images/html.png" alt="Image 1" />
+        <h2>HTML CSS & JS</h2>
+        <p>
+          I can create a frontend of a website using HTML, CSS and JavaScript.
+          Also I can develop a responsive website.
+        </p>
+      </div>
+      <div class="component">
+        <img src="./images/react.jpg" alt="Image 2" />
+        <h2>React</h2>
+        <p>I have good knowledge of frontend frameworks like React.So, I also
+           create a single page applications.
+        </p>
+      </div>
+      <div class="component">
+        <img src="./images/android2.jpg" alt="Image 3" />
+        <h2>Java</h2>
+        <p>I have also created some android applications so, I also have knowledge
+            of Java and other mobile application technoogies.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ebec749033.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins', sans-serif;
+        } 
+        
+         .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: linear-gradient(rgba(16, 16, 43, 0.8),rgba(16, 16, 43, 0.8)), url('./images/rand.jpg');  
+        } 
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h1 {
+          font-size: 45px;
+          color: #fff;
+        }
+        .contact .content p {
+          font-size: 15px;
+          color: #fff;
+        }
+        .container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 35px;
+        }
+        .container .contactInfo {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+        }
+        .container .contactInfo .box {
+          position: relative;
+          padding: 20px 0;
+          display: flex; 
+        }
+        .container .contactInfo .box .icon {
+          min-width: 50px;
+          height: 50px;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 20px;
+        }
+        .container .contactInfo .box .text {
+          display: flex;
+          margin-left: 20px;
+          font-size: 15px;
+          color: #fff;
+          flex-direction: column;
+        }
+        .container .contactInfo .box .text h3 {
+          color: #00bcd4;
+        }
+        .contactForm {
+          width: 40%;
+          padding: 40px;
+          background: #fff ;
+        }
+        .contactForm h2 {
+          font-size: 30px;
+          color: #333;
+          margin-bottom: 20px;
+        }
+        .contactForm .inputBox {
+          position: relative;
+          width: 100%;
+          margin-top: 10px;
+        } 
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+          width: 100%;
+          padding: 5px 0px;
+          font-size: 15px;
+          margin: 10px 0px;
+          border: none;
+          border-bottom: 1.8px solid #333;
+          outline: none;
+          resize: none;
+        }
+        .contactForm .inputBox span {
+          position: absolute;
+          left: 0;
+          padding: 5px 0px;
+          font-size: 15px;
+          margin: 10px 0px;
+          pointer-events: none;
+          transition: 0.5s;
+          color: #666
+        }
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span,
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox input:valid ~ span
+        {
+          color: rgb(153, 30, 30);
+          font-size: 12px;
+          transform: translateY(-20px);
+        }
+        .contactForm .inputBox input[type="submit"]
+        {
+          width: 100px;
+          background: #00bcd4;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          padding: 10px;
+          font-size: 18px;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="contact">
+      <div class="content">
+        <h1>Contact Us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          distinctio adipisci fugit saepe, amet.have u stumble about a problem about the positioning of the span when it was viewed on chrome. FIrefox worked great but not in chrome. In fox when using position:absolute the span goes to the right then left 0 to go to left. But in chrome its not. The output in chrome, span stays under the border bottom of the input text
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                            <p>Lekhnath Marg, <br> Kathmandu-26,<br> 44600</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                            <p>+977-9869402175</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                            <p>bhrt.7856@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type Yor Message Here</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="send"
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
